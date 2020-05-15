@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report3" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d9bae1f4-bce6-4161-ba51-9bd912a1e778">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select *from soruislemleri]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="SoruTipi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DersAdi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Soru" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Sik1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Sik2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Sik3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Sik4" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Cevap" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Puan" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ZorlukDerecesi" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="Soru_1" class="java.lang.Integer" resetType="Column" calculation="DistinctCount">
+		<variableExpression><![CDATA[$F{Soru}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="237" y="28" width="100" height="20" uuid="31916cad-a0a2-4aa4-9be2-509a83ada62c"/>
+				<text><![CDATA[SORULAR]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="555" height="20" uuid="ca3c9aa2-ccfb-4b76-9843-21098104962c"/>
+				<textFieldExpression><![CDATA[$F{Soru}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="47" y="34" width="141" height="20" uuid="058eb1c1-1d1f-4802-bf02-355b18fba540"/>
+				<textFieldExpression><![CDATA[$F{Sik1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="298" y="34" width="174" height="20" uuid="42ab5c2d-cd4d-41ce-845b-47e41bbbb07d"/>
+				<textFieldExpression><![CDATA[$F{Sik2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="47" y="76" width="141" height="20" uuid="4050fea7-fb19-4b4a-abf3-0d4960ef5dfe"/>
+				<textFieldExpression><![CDATA[$F{Sik3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="298" y="76" width="174" height="20" uuid="75a98bc4-ce12-41ae-bcdf-1e4d366be1d2"/>
+				<textFieldExpression><![CDATA[$F{Sik4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="34" width="24" height="20" uuid="9b06b175-109e-4480-8de4-9d18200dab3f"/>
+				<text><![CDATA[A)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="274" y="34" width="24" height="20" uuid="4b4e9324-f9af-4089-8f28-5942d6f95448"/>
+				<text><![CDATA[B)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="76" width="24" height="20" uuid="8c1d1892-a4c4-4a0d-884e-4ca01209bb92"/>
+				<text><![CDATA[C)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="274" y="76" width="24" height="20" uuid="54e985cb-2467-4b68-9b25-40fe572248a7"/>
+				<text><![CDATA[D)]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

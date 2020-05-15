@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report2" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1de88646-2004-4fc7-8238-66f086d48c19">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select * from soruislemleri]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="SoruTipi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DersAdi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Soru" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Sik1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Sik2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Sik3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Sik4" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Cevap" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Puan" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ZorlukDerecesi" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<title>
+		<band height="79" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="555" height="43" uuid="cff3fe9f-5ea3-4c43-abc1-3675dc897d6e"/>
+				<textFieldExpression><![CDATA[$F{Soru}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="59" width="100" height="20" uuid="3d8e26b3-4a02-40e6-a795-6289114c779f"/>
+				<textFieldExpression><![CDATA[$F{Sik1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="155" y="59" width="100" height="20" uuid="01b787cd-cd9d-49dc-adf9-ad3dbd973ce9"/>
+				<textFieldExpression><![CDATA[$F{Sik2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="292" y="59" width="100" height="20" uuid="2a7a4683-3415-4831-91bd-3baa44f5f14d"/>
+				<textFieldExpression><![CDATA[$F{Sik3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="442" y="59" width="100" height="20" uuid="86c16657-a7c1-4e4d-beac-de98cb83762a"/>
+				<textFieldExpression><![CDATA[$F{Sik4}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="93" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+</jasperReport>

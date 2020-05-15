@@ -1,0 +1,12 @@
+Rar dosyasýnýn içerisinde 
+SoruBankasi klasörü yaptýðýmýz projenin kaynak dosyalarý bulunmaktadýr.
+sorubankasi sql dosyasýnýn içerisinde ise veri tabanýmýz bulunmaktadýr.
+jasper jarlar isimli klasörün içerisinde ise jasper report'un çalýþmasý için gerekli kütüphaneler ve veri tabaný baðlantýsý için connector
+bulunmaktadýr.
+Projenin düzgün çalýþabilmesi için lütfen jasper jarlar içerisindeki dosyalarý projenin içerisinde library dosyasýna import ediniz.
+
+PROJE ÜYELERÝ
+
+CELÝL ÇAMUR
+SALÝH DEMÝRBAÞ
+
